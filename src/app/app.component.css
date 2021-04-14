@@ -1,0 +1,42 @@
+.navbar{
+    justify-content: space-between;
+    background-color:rgb(104, 14, 131);
+   
+}
+
+span{
+    padding-right: 1rem;
+}
+
+.name{
+    align-content: space-around;
+}
+
+mat-sidenav-container{
+    height: 100%;
+    color: white;
+
+}
+
+mat-sidenav, mat-sidnav-content{
+    padding: 16px;
+}
+
+mat-sidenav{
+    width:200px;
+}
+
+
+mat-sidenav{
+    background-color: rgb(104, 14, 131) ;
+}
+
+.cardbutton{
+    text-align-last: center ;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    }
+

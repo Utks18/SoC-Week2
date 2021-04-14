@@ -1,0 +1,72 @@
+<mat-toolbar class="navbar">
+  
+  <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <h6>Utkarsh's Angular Website</h6>
+  
+  <div>  
+    
+    <a routerLink=""><button mat-icon-button ><mat-icon>home</mat-icon></button></a>
+  </div>
+
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+    <mat-nav-list>
+    <a mat-list-item routerLink="/buttons">Buttons</a>
+    <a mat-list-item routerLink="/chips">Chips</a>
+    <a mat-list-item routerLink="/date">Progress Spinner</a>
+    <a mat-list-item routerLink="/slide"> Slide Toggle</a>
+
+  </mat-nav-list>
+</mat-sidenav>
+  
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+    <mat-grid-list gutterSize="3%" class="grid" cols="2" rowHeight="50%">
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-title> Button</mat-card-title>
+          <mat-card-subtitle>Buttons in Angular</mat-card-subtitle>
+          <img mat-card-image src="https://material.angular.io/assets/screenshots/button.scene.png">
+          <mat-card-actions>
+           <div class="cardbutton"><a routerLink="/buttons"><button mat-raised-button >See example</button></a></div> 
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-title> Chips</mat-card-title>
+          <mat-card-subtitle>Chips in Angular</mat-card-subtitle>
+          <img mat-card-image src="https://material.angular.io/assets/screenshots/chips.scene.png">
+          <mat-card-actions>
+            <div class="cardbutton"><a routerLink="/chips"><button mat-raised-button >See example</button></a></div> 
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-title>Progress Spinner</mat-card-title>
+          <mat-card-subtitle>Spinner in Angular</mat-card-subtitle>
+          <img mat-card-image src="https://material.angular.io/assets/screenshots/progress-spinner.scene.png">
+          <mat-card-actions>
+            <div class="cardbutton"><a routerLink="/date"><button mat-raised-button >See example</button></a></div> 
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card>
+          <mat-card-title>Slide Toggle</mat-card-title>
+          <mat-card-subtitle>Slide Toggle in Angular</mat-card-subtitle>
+          <img mat-card-image src="https://material.angular.io/assets/screenshots/slide-toggle.scene.png">
+          <mat-card-actions>
+            <div class="cardbutton"><a routerLink="/slide"><button mat-raised-button >See example</button></a></div>
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
